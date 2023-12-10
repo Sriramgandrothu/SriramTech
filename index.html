@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv= "X-UA-Compatible" content= "IE=edge">
+    <link rel="shortcut icon" type="x-icon" href="Images/icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SriramGandrothu</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/e81628eead.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container" class="header-scroller header-transparent">
+            <nav >
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Exp">Skills</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Designer</p>    
+                <h1>
+                    Hi, I'm <span>Sri</span> <br> From Ravulapalem
+                </h1>
+            </div> 
+        </div>
+    </div>
+    <!-- ----------about------------ -->
+    <div id= "about">
+        <div class= "container">
+            <div class="row">
+                <div class="about-col-1">
+                     <img src= "Images/1234.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello, I'm G.S.S.S.Sriram, 
+                    and I welcome you to my portfolio. 
+                    Here, you'll find a collection of my work and accomplishments, 
+                    reflecting my passion, dedication, and creativity. 
+                    I invite you to explore and discover the story I've woven through my projects, 
+                    and I look forward to the possibility of collaborating with you in the future. 
+                    Thank you for visiting!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('About Me')">Information</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class= "tab-contents active-tab" id="About Me">
+                        <ul>
+                            <li><span>Dob</span><br>14-04-2004</li>
+                            <li><span>Degree</span><br>Bachelor of Technology-ECE</1i>
+                            <li><span>Internship</span><br>Available</1i>
+                            <li><span>City</span><br>Ravulapalem,A.P.India</1i>
+                        </ul>
+                    </div>
+                <div class= "tab-contents" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</1i>
+                        <li><span>IOT</span><br>Building Projects using Hardware components</1i>
+                        <li><span>Figma Designer</span><br>Designing Web/App interfaces</1i>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                    <li><span>2023</span><br>Doing as Prompt Engineer</li>
+                    <li><span>2023</span><br>Internship at SRKREC on AWS Cloud Computing under Blackbucks.co
+                    <li><span>2022</span><br>Learned UI/UX Design based on udemy and did sample projects</li>
+                    <li><span>2022</span><br>Done as an Freelauncher</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                    <li><span>2019</span><br>Sri Siddartha English Mediun High School,Ravulapalem.</li>
+                    <li><span>2019-2021</span><br>Tirumala Junior College,Katheru.</li>
+                    <li><span>2021-Present</span><br>SRKR Engineering College,Bhimavaram.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+   </div>
+   <!-- -----------experience----------- -->
+   <div id="Exp">
+    <div class="container ">
+        <h1 class= "sub-title" >My Skills</h1>
+        <div class="skills">
+            <h2>HTML</h2>
+            <div class="progress-bar">
+                <div class="html"><span>100%</span></div>
+            </div>
+            <h2>CSS</h2>
+            <div class="progress-bar">
+                <div class="css"><span>90%</span></div>
+            </div>
+            <h2>Java Script</h2>
+            <div class="progress-bar">
+                <div class="javascript"><span>75%</span></div>
+            </div>
+            <h2>Python</h2>
+            <div class="progress-bar">
+                <div class="python"><span>70%</span></div>
+            </div>
+            <h2>React</h2>
+            <div class="progress-bar">
+                <div class="react"><span>50%</span></div>
+            </div>
+        </div>
+    </div>
+   </div>
+   <!-- ------------services---------- -->
+    <div id= "services">
+        <div class="container">
+            <h1 class= "sub-title" >My Services</h1>
+            <div class= "services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web designing involves creating visually appealing and functional websites by combining various elements like layout, colors, graphics, and user interface design.. </p>
+                    <a href="https://en.wikipedia.org/wiki/Web_design">Learn more</a>
+                </div>
+                  <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Prompt Engineering</h2>
+                    <p>"Prompt engineering involves swift problem-solving and rapid development to meet tight deadlines in the field of technology and innovation.". </p>
+                    <a href="https://en.wikipedia.org/wiki/Prompt_engineering">Learn more</a>
+               </div>
+               <div>
+                     <i class="fa-brands fa-figma"></i>
+                    <h2>Figma Design</h2>
+                    <p>Figma is a flexible design tool that fosters real-time collaboration, empowering users to create impressive digital designs for web interfaces, app prototypes, and user experiences.. </p>
+                    <a href="https://en.wikipedia.org/wiki/Figma">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------------portfolio------------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class= "sub-title" >My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/work1.png">
+                    <div class="layer">
+                        <h3>Magic 8-ball Game</h3>
+                        <p>The Magic 8 ball game offers whimsical and mysterious answers to questions posed to it.</p>
+                            <a href="https://8ballgame.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work2.png">
+                    <div class="layer">
+                        <h3>Tic-Tac-Toe</h3>
+                        <p>Tic-tac-toe is a classic game played on a grid by two players aiming to align three of their marks horizontally, vertically, or diagonally to win.</p>
+                            <a href="https://tictactoe-mu-inky.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work3.png">
+                    <div class="layer">
+                        <h3>Rock Paper Scissors</h3>
+                        <p>Rock, paper, scissors is a popular hand game often used to make quick decisions or settle disputes.</p>
+                            <a href="https://rock-paper-scissor-lilac-pi.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work4.jpg">
+                    <div class="layer">
+                        <h3>Whack A Mole</h3>
+                        <p>Whack-a-mole is a classic arcade game where players use a mallet to hit popping toy moles back into their holes.</p>
+                            <a href="https://molegame-tau.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work5.png">
+                    <div class="layer">
+                        <h3>Shopping List</h3>
+                        <p>The shopping list is a detailed inventory of various items and products required for purchasing during a trip to the store, outlining specific quantities, brands, and types of goods needed to fulfill household needs or any planned meals.</p>
+                            <a href="https://grocery-list-lovat.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+               
+                 </div>
+                 <div class="work">
+                    <img src="Images/work6.jpg">
+                    <div class="layer">
+                        <h3>Basic Clock</h3>
+                        <p>The clock chimed twelve, echoing through the silent room as its hands continued their steady rotation.</p>
+                            <a href="https://clock1-liart.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            <!-- <a href="#" class="btn">See More</a> -->
+        </div>
+    </div>
+<!-- ----------------Contact---------------- -->
+<div id="contact">
+    <div class="container1">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> sriramgandrothu@gmail.com</p>
+                <p><i class="fa-regular fa-paper-plane"></i> sriramnaidugandrothu@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91 7842713943</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100078108111116"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com/sriramgandrothu?utm_source=qr&igshid=MzNlNGNkZWQ4Mg=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/sriram-gandrothu-2a653b219?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com/sriramgandrothu"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <a href="Images/SriramResume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <h1 class="sub-title">My Location</h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30599.185961365463!2d81.4715103475451!3d16.531233939877144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a362d6a3ca5c99f%3A0x8f55d603f8fcffe!2sChinamiram%20Rural%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1702140944951!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<button class="my_bttn">
+    <i class="fa fa-arrow-up"></i>
+</button>
+
+
+<div class="copyright">
+    <p>Copyright © SriramGandrothu <i class="fa-solid fa-code"></i></p>
+</div>
+<!-- -----------------Java Scripting------------------ -->
+   <script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        } 
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }   
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+    }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyAQTN8C1hXngcRwumknRtbZeCQUKbqv9CLRQa_Ba7ZsfZyw_YFpnaLZPTGSIgDzVqxgQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+    
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script>
+        $(document).ready(function(){
+    $(window).scroll(function(){
+        if($(window).scrollTop()>300){
+	    $('.my_bttn').fadeIn(250);
+	}
+	else{
+	    $('.my_bttn').fadeOut(250);
+	}
+    });
+    $('.my_bttn').click(function(){
+	$('html,body').animate(
+	    {scrollTop:0},400
+	);
+    });
+});
+    </script>
+</body>
+</html>
