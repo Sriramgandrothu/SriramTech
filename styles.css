@@ -1,3 +1,6 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Afacad&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -7,7 +10,7 @@
 body{
     background: #080808;
     color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Afcad;
 }
 html{
     scroll-behavior: smooth;
