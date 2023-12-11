@@ -7,7 +7,7 @@
 body{
     background: #080808;
     color: white;
-
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 html{
     scroll-behavior: smooth;
@@ -409,7 +409,7 @@ form input, form textarea{
     border: 0;
     outline: none;
     background: #262626;
-    padding: 7px;
+    padding: 4px;
     margin: 15px 0;
     color: #fff;
     font-size: 18px;
