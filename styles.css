@@ -7,7 +7,6 @@
 body{
     background: #080808;
     color: white;
-    font-family: 'Courier New', Courier, monospace;
 
 }
 html{
@@ -356,7 +355,17 @@ font-size: 14px;
 #contact{
     margin-top: 50px;
 }
-
+.sub1{
+    font-size: 40px;
+    font-weight: 800;
+    color: #fff;
+}
+.sub2{
+    font-size: 15px;
+    font-weight: 200;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #fff;
+}
 .contact-left{
     flex-basis: 35%;
 }
@@ -400,7 +409,7 @@ form input, form textarea{
     border: 0;
     outline: none;
     background: #262626;
-    padding: 15px;
+    padding: 7px;
     margin: 15px 0;
     color: #fff;
     font-size: 18px;
