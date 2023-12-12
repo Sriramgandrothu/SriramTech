@@ -1,6 +1,4 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Afacad&display=swap');
-
 *{
     margin: 0;
     padding: 0;
@@ -11,6 +9,13 @@ body{
     background: #080808;
     color: white;
     font-family: Afcad;
+}
+#preloader{
+    background: #000 url(Images/loader.gif) no-repeat center center ;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
 }
 html{
     scroll-behavior: smooth;
