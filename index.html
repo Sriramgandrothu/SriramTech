@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/e81628eead.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    
 </head>
 <body>
     <div id="preloader"></div>
@@ -22,6 +21,7 @@
                     <li><a href="#Exp">Skills</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#cherished one">Cherished One</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
@@ -203,6 +203,67 @@
             <!-- <a href="#" class="btn">See More</a> -->
         </div>
     </div>
+<!-- -----------Testimonials------------->
+<div id="cherished one">
+    <!-- <div class="container" > -->
+    <div class="container2">
+        <h1 class="sub-title">Cherished One</h1>
+        <div class="testim" id="testim">
+            <div class="wrap">
+    
+                <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+                <span id="left-arrow" class="arrow left fa fa-chevron-left"></span>
+    
+                <ul class="dots" id="testim-dots">
+                    <li class="dot active"></li>
+                    <li class="dot"></li>
+                    <li class="dot"></li>
+                    <li class="dot"></li>
+                    <li class="dot"></li>
+                </ul>
+    
+                <div class="cont" id="testim-content">
+    
+                    <div class="active">
+                        <div class="img"><img src="Images/Testimonials/p1.jpg"></div>
+                        <h2>Parameswararao Gandrothu</h2>
+                        <p>"My father's unwavering guidance and resilience continue to inspire my journey towards success, 
+                            embodying strength and wisdom in every step taken."</p>
+                    </div>
+                    
+                    <div>
+                        <div class="img"><img src="Images/Testimonials/p2.JPG"></div>
+                        <h2>Satyam Pentapati</h2>
+                        <p>"My grandfather was a steadfast beacon of wisdom, his life a testament to resilience and unwavering kindness,
+                            His enduring legacy continues to inspire and guide generations with its timeless wisdom and grace."</p>
+                    </div>
+                    
+                    <div>
+                        <div class="img"><img src="Images/Testimonials/p3.jpg"></div>
+                        <h2>Kalyan babu Konidela</h2>
+                        <p>"Pawan Kalyan Konidela, a multifaceted Indian actor, renowned for his charismatic 
+                            performances and unwavering commitment to social causes,embodies a unique blend of talent and advocacy in the realm of Indian cinema."</p>
+                    </div>
+                    
+                    <div>
+                        <div class="img"><img src="Images/Testimonials/p4.jpg"></div>
+                        <h2>Virat Kohli</h2>
+                        <p>"Virat Kohli, a cricketing maestro, epitomizes sheer dedication and unparalleled prowess in the realm of sports, 
+                            setting a benchmark for excellence with his phenomenal batting skills and inspirational leadership."</p>
+                    </div>
+                    <div>
+                        <div class="img"><img src="Images/Testimonials/p5.jpg"></div>
+                        <h2>Ratan Tata</h2>
+                        <p>"Ratan Tata, a visionary leader and philanthropist, transformed the Tata Group into a global powerhouse, 
+                            combining business acumen with a commitment to social responsibility."</p>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
 <!-- ----------------Contact---------------- -->
 <div id="contact">
     <div class="container1">
@@ -313,6 +374,65 @@
         window. addEventListener("load", function(){
         loader.style.display = "none";
         })
+    </script>
+
+    <!-- ------------Testimonials------------- -->
+    <script>
+        'use strict'
+    var testim = document.getElementById("testim"),
+    testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
+    testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children),
+    testimleftArrow = document.getElementById("left-arrow"),
+    testimRightArrow = document.getElementById("right-arrow"),
+    testimSpeed = 4500,
+    currentSlide = 0,
+    currentActive = 0,
+    testimTimer
+    ;
+// coding with nick
+window.onload = function () {
+
+    // Testim Script
+    function playSlide(slide) {
+        for (var k = 0; k < testimDots.length; k++) {
+            testimContent[k].classList.remove("active");
+            testimContent[k].classList.remove("inactive");
+            testimDots[k].classList.remove("active");
+        }
+        if (slide < 0) {
+            slide = currentSlide = testimContent.length - 1;
+        }
+        if (slide > testimContent.length - 1) {
+            slide = currentSlide = 0;
+        }
+        if (currentActive != currentSlide) {
+            testimContent[currentActive].classList.add("inactive");
+        }
+        testimContent[slide].classList.add("active");
+        testimDots[slide].classList.add("active");
+
+        currentActive = currentSlide;
+
+        clearTimeout(testimTimer);
+        testimTimer = setTimeout(function () {
+            playSlide(currentSlide += 1);
+        }, testimSpeed)
+    }
+    testimleftArrow.addEventListener("click", function () {
+        playSlide(currentSlide -= 1);
+    })
+    testimRightArrow.addEventListener("click", function () {
+        playSlide(currentSlide += 1);
+    })
+
+    for (var l = 0; l < testimDots.length; l++) {
+        testimDots[l].addEventListener("click", function () {
+            playSlide(currentSlide = testimDots.indexOf(this));
+        })
+    }
+    playSlide(currentSlide);
+
+}
     </script>
 </body>
 </html>
