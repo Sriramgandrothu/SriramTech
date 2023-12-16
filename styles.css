@@ -838,7 +838,7 @@ nav .fa-solid{
 /* ---------css------------ */
 @media only screen and (max-width: 767px) {
     .container2 {
-      padding: 10px 5%;
+      padding: 10px 10%;
       font-size: 14px; 
       margin-bottom: 20%; 
     }
@@ -859,9 +859,9 @@ nav .fa-solid{
   }
   @media only screen and (max-width: 600px) {
     .container2 {
-        padding: 10px 5%;
+        padding: 10px 10%;
         font-size: 14px;
-        margin-bottom: 20%;
+        margin-bottom: -20%;
     }
 
     .testim {
