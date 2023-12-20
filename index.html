@@ -11,7 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-    <div class="loader"></div>
+    <div id="preloader"></div>
     <div id="header">
         <div class="container" class="header-scroller header-transparent">
             <nav >
@@ -369,7 +369,7 @@
 
     <!-- ------------loader------------ -->
     <script>
-        var loader = document. getElementById("loader") ;
+        var loader = document. getElementById("preloader") ;
 
         window. addEventListener("load", function(){
         loader.style.display = "none";
@@ -389,6 +389,7 @@
     currentActive = 0,
     testimTimer
     ;
+
 window.onload = function () {
 
     // Testim Script
