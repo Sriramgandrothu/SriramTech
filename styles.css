@@ -363,6 +363,7 @@ font-size: 14px;
     margin-bottom: 20%;
     font-family: 'Roboto',sans-serif;
     background: #080808;
+    margin-top: 5%;
 }
 .container2:after,
 .container2:before{
@@ -374,7 +375,7 @@ font-size: 14px;
 }
 .testim{
     position: absolute;
-    top: 490%;
+    top: 499%;
     transform: translateY(-50%);
 }
 .testim .wrap{
@@ -558,7 +559,7 @@ border-color: #ea830e;
     padding: 10px 10% ;
 }
 #contact{
-    margin-top: 50px;
+    margin-top: 70px;
 }
 .sub1{
     font-size: 40px;
