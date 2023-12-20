@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
 }
 body{
@@ -360,7 +360,7 @@ font-size: 14px;
     height: auto;
     font-size: 16px;
     font-weight: 300;
-    margin-bottom: 30%;
+    margin-bottom: 20%;
     font-family: 'Roboto',sans-serif;
     background: #080808;
 }
@@ -483,10 +483,10 @@ border-color: #ea830e;
     animation: testim-show .5s ease-in-out forwards;
 }
 .testim .cont div.active h2{
-    animation: testim-content-in .4s ease-in-out forwards;
+    animation: testim-content-in .6s ease-in-out forwards;
 }
 .testim .cont div.active p {
-    animation: testim-content-in .5s ease-in-out forwards;
+    animation: testim-content-in .7s ease-in-out forwards;
 }
 .testim .cont div.inactive .img img{
     animation: testim-hide .5s ease-in-out forwards;
@@ -558,7 +558,7 @@ border-color: #ea830e;
     padding: 10px 10% ;
 }
 #contact{
-    margin-top:     50px;
+    margin-top: 50px;
 }
 .sub1{
     font-size: 40px;
@@ -840,7 +840,8 @@ nav .fa-solid{
     .container2 {
       padding: 10px 10%;
       font-size: 14px; 
-      margin-bottom: 20%; 
+      margin-top: 2%;
+      margin-bottom: -6%; 
     }
   
     .testim {
@@ -866,5 +867,17 @@ nav .fa-solid{
 
     .testim {
         top: 390%;
+    }
+}
+@media (max-width: 1024px) and (max-height: 1366px) {
+    .container2 {
+        /* Adjust styles for the specified dimensions */
+        /* Add your specific adjustments here */
+    }
+}
+
+@media (max-width: 912px) and (max-height: 1368px) {
+    .testim{
+        margin-bottom: 10px;
     }
 }
