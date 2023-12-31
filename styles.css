@@ -386,6 +386,7 @@ font-size: 14px;
     position: absolute;
     top: 400%;
     margin-top: -500px;
+    margin-left: -20px;
     transform: translateY(-50%);
 }
 .testim .wrap{
