@@ -892,7 +892,7 @@ nav .fa-solid{
         margin-bottom: 10px;
     }
 }
-@media screen and (min-width: 1024px) and (min-height: 600px) {
+/* @media screen and (min-width: 1024px) and (min-height: 600px) {
     .testim{
         top: 558%;
         margin-left: -80px;
@@ -912,7 +912,7 @@ nav .fa-solid{
         margin-left: -20px;
         margin-right: 10%;
     }
-}
+} */
 @media screen and (min-width: 1280px) and (min-height: 800px) {
     .testim{
         top: 445%;
@@ -928,5 +928,31 @@ nav .fa-solid{
     }
     .skills h2{
         margin-left: 50px;
+    }
+}
+@media screen and (min-width: 1024px) and (min-height: 1366px) {
+    #header{
+        width: 100%;
+        height: 100vh;
+        background-image: url(Images/mobile.png);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    .skills{
+        padding: 10px 10%;
+        margin-left: -70px;
+    }
+    .progress-bar{
+        width: 120%;
+    }
+    .testim{
+        top: 300%;
+        padding: 5px 5%;
+    }
+}
+@media screen and (min-width: 1366px) and (min-height: 768px) {
+    .testim{
+        top: 480%;
     }
 }
