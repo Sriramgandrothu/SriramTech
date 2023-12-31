@@ -892,3 +892,41 @@ nav .fa-solid{
         margin-bottom: 10px;
     }
 }
+@media screen and (min-width: 1024px) and (min-height: 600px) {
+    .testim{
+        top: 558%;
+        margin-left: -80px;
+    }
+    .container{
+        padding: 9px 5%;
+    }
+    #header{
+        width: 100%;
+        height: 100vh;
+        background-image: url(Images/Sriram.JPG);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    .skills{
+        margin-left: -20px;
+        margin-right: 10%;
+    }
+}
+@media screen and (min-width: 1280px) and (min-height: 800px) {
+    .testim{
+        top: 445%;
+        align-items: center;
+        margin-left: 10px;
+    }
+    .container{
+        padding: 9px 5%;
+    }
+    .progress-bar{
+        width: 100%;
+        margin-left: 50px;
+    }
+    .skills h2{
+        margin-left: 50px;
+    }
+}
